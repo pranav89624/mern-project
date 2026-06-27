@@ -108,6 +108,10 @@ a.active{
 /* ******hero section******* */
 
 .section-hero{
+  margin: 30px;
+}
+
+.section-hero{
   &.grid{
     align-items: center;
   }
@@ -141,7 +145,10 @@ a.active{
 .section-analytics .container{
   background-color: var(--bg-color);
   border-radius: 1rem;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -385,16 +392,8 @@ a.active{
     font-size: 56.25%;
   }
 
-  .grid-two-cols{
-    grid-template-columns: 1fr;
-  }
-
   .grid-four-cols{
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .section-hero .hero-image img{
-    width: 80%;
   }
 
   .section-registration .registration-image img{
@@ -420,6 +419,15 @@ a.active{
 
   .section-hero{
     text-align: center;
+  }
+
+  .grid-two-cols{
+    grid-template-columns: 1fr;
+  }
+  
+  .section-hero .hero-image img{
+    width: 70%;
+    height: auto;
   }
 
   .section-hero .btn-group{
